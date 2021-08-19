@@ -160,13 +160,13 @@ Now it's time to play around the layout and take advantage of the features avail
   
   #### 3- Using remote test lab
   
-  The other option if you dont have a physical device is using [https://developer.samsung.com/remote-test-lab](Samsung Remote Test Lab), you can choose the Galaxy Flip
+  The other option if you dont have a physical device is using [Samsung Remote Test Lab](https://developer.samsung.com/remote-test-lab), you can choose the Galaxy Flip
   from the list of real devices and follow up the same instructions as you would in a real device! Just make sure to enable the device posture API and have the latest version
   of Samsung Internet, then just use the buttons provided by the Test Lab to flip your remote Galaxy Device!!
   
   #### 4- Implementing polyfill
   
-  The [https://w3c.github.io/device-posture/polyfill/demo.html](polyfill) allows you to emulate this behavior on devices that do not have folding capabilities. 
+  The [polyfill](https://w3c.github.io/device-posture/polyfill/demo.html) allows you to emulate this behavior on devices that do not have folding capabilities. 
   It helps you visualize how the content responds to the different angle and posture configurations. Just include sfold-polyfill.js directly into your code and
 use the polyfill settings of the web component that will emulate the angle of the device and therefore it will change its posture.
   
