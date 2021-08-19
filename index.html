@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/samsunginternet/OneUI-Web/oui-css/oui.css"
+    />
+    <script src="index.js"></script>
+    <title>Folding the Web</title>
+    <script>
+      if (window.location.protocol === "http:")
+        window.location.protocol = "https:";
+      if (window.screen.fold !== undefined) window.screen.fold;
+    </script>
+  </head>
+  <body>
+
+    <div class="video-container">       
+      <!--Insert video markup -->
+    </div>
+    
+   <div class="camera-controls">
+      <p class="msg">Unfold the future</p>
+      <canvas id="canvas" width="50" height="50"> </canvas>
+      <img id="photo" alt="Captured photo." width="100" height="100" />
+      <button id="snap" class="snap"></button>
+      <button id="flip" class="snap"></button>
+    </div>
+  </body>
+</html>
