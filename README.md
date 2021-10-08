@@ -17,7 +17,7 @@ this allows web applications to request and be notified of changes of the postur
 ### Prerequisites
 
 - Basic knowledge of HTML5, CSS and Javascript
-- Samsung Internet Web Browser
+- Latest version of Samsung Internet Web Browser
 - For testing: A foldable device / [Samsung Remote Test Lab Account](https://developer.samsung.com/remote-test-lab) / [Device Posture API Polyfill](https://github.com/w3c/device-posture/tree/gh-pages/polyfill)
 
 ### What You'll Build
@@ -126,7 +126,7 @@ Now it's time to play around the layout and take advantage of the features avail
   In your CSS, apply the following media query:
   
   ```css
-  @media (screen-fold-posture: laptop) {
+  @media (device-posture: folded)  {
   
    body {
      display: flex;
