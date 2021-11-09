@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/samsunginternet/OneUI-Web/oui-css/oui.css"
-    />
-    <script src="index.js"></script>
+    >
+    <script src="index.js" type="module"></script>
     <title>Folding the Web</title>
     <script>
-      if (window.location.protocol === "http:")
+       if (window.location.protocol === "http:")
         window.location.protocol = "https:";
       if (window.navigator.devicePosture.type !== undefined) window.navigator.devicePosture.type
     </script>
@@ -20,7 +19,9 @@
   <body>
 
     <div class="video-container">       
-      <!--Insert video markup -->
+      <video id="video" width="1280" height="200" >
+        Video stream not available.
+      </video>
     </div>
     
    <div class="camera-controls">
