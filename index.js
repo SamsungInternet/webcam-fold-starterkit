@@ -1,4 +1,3 @@
-(function() {
   let width = 320;
   let height = 0;
 
@@ -18,7 +17,12 @@
     let shouldFaceUser = true;
     let defaultsOpts = { video: true, audio: false };
 
-    // Insert here the code to check if facingMode is available
+    // Check if supports facingMode
+
+    let supports = navigator.mediaDevices.getSupportedConstraints();
+    if (supports["facingMode"] === true) {
+      flip_button.disabled = false;
+    }
 
     // Get streaming media video without audio
 
@@ -28,8 +32,15 @@
         facingMode: shouldFaceUser ? "user" : "environment"
       };
 
-      //Insert code to activate camera
-    
+      //Activate camera
+      navigator.mediaDevices
+        .getUserMedia(defaultsOpts)
+        .then(_stream => {
+          stream = _stream;
+          video.srcObject = stream;
+          video.play();
+        })
+        .catch(error => console.error(error));
     };
 
     // Listen video to start playing
@@ -103,4 +114,4 @@
 
   //Run startup after loading
   window.addEventListener("load", startup, false);
-})();
+
