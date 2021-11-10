@@ -172,10 +172,13 @@ use the polyfill settings of the web component that will emulate the angle of th
   
   
 Congratulations!! You just created, designed and tested a web cam that changes its layout when a device is folding.
+Please let us know how it went [here](https://docs.google.com/forms/d/e/1FAIpQLSeai6Bwqle_ANIdRxRPgN5gkc0rvyuvfbsHTt9rasiMqf9x0g/viewform), your feedback is really important as it will be part of the discussion in the W3C Devices and Sensors Group. Join the conversation!     
 If you would like to learn more about it, here are some resources:
   - [Overview of Galaxy Z](https://developer.samsung.com/galaxy-z/blog.html)
   - [Web Responsive Design of Foldable Devices](https://medium.com/samsung-internet-dev/web-responsive-design-for-the-new-generation-of-foldable-devices-ee434ae0fcb5)
   - [The Device Posture API](https://github.com/w3c/device-posture)
+   
+  - [Video explainer](https://www.youtube.com/embed/SfKrjvsaOnU)
   
   
   
