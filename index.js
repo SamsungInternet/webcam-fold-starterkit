@@ -19,29 +19,16 @@
 
     // Check if supports facingMode
 
-    let supports = navigator.mediaDevices.getSupportedConstraints();
-    if (supports["facingMode"] === true) {
-      flip_button.disabled = false;
-    }
-
     // Get streaming media video without audio
 
     let capture = function() {
       // Check which camera will choose, front or back
       defaultsOpts.video = {
         facingMode: shouldFaceUser ? "user" : "environment"
-      };
-
-      //Activate camera
-      navigator.mediaDevices
-        .getUserMedia(defaultsOpts)
-        .then(_stream => {
-          stream = _stream;
-          video.srcObject = stream;
-          video.play();
-        })
-        .catch(error => console.error(error));
     };
+
+    //Activate camera
+  
 
     // Listen video to start playing
     video.addEventListener("canplay", function(e) {
