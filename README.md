@@ -169,6 +169,10 @@ Now it's time to play around the layout and take advantage of the features avail
   The [polyfill](https://w3c.github.io/device-posture/polyfill/demo.html) allows you to emulate this behavior on devices that do not have folding capabilities. 
   It helps you visualize how the content responds to the different angle and posture configurations. Just include sfold-polyfill.js directly into your code and
 use the polyfill settings of the web component that will emulate the angle of the device and therefore it will change its posture.
+As the polyfill has a previous version of the API just replace the media query with the following one.
+```css
+@media (screen-fold-posture: laptop) 
+```
   
   
 Congratulations!! You just created, designed and tested a web cam that changes its layout when a device is folding.
