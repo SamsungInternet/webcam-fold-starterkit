@@ -25,7 +25,8 @@
       // Check which camera will choose, front or back
       defaultsOpts.video = {
         facingMode: shouldFaceUser ? "user" : "environment"
-    };
+      };
+    }
 
     //Activate camera
   
